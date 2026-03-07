@@ -1,0 +1,53 @@
+---
+title: "Custom sign-in URL"
+description: "Set up a custom vanity URL for your facility's parent sign-in page."
+---
+
+By default, parents access your sign-in page using your facility number (e.g., `readyrule.com/go/013423682`). A custom sign-in URL replaces that number with a human-readable name like `readyrule.com/go/sunshine-daycare`.
+
+<img src="/images/admin/vanity-url-settings.png" alt="Custom sign-in URL setting in Settings" />
+
+## Quick start
+
+<Steps>
+  <Step title="Open Settings">
+    Navigate to **Settings** in the sidebar.
+  </Step>
+  <Step title="Find the custom sign-in URL setting">
+    Under **Facility Profile**, locate the custom sign-in URL field.
+  </Step>
+  <Step title="Enter your preferred slug">
+    Type a short, memorable name for your facility. The field auto-formats to lowercase and strips invalid characters. A live preview shows the full URL.
+  </Step>
+  <Step title="Save">
+    Click **Save**. ReadyRule checks that the name is available before confirming.
+  </Step>
+</Steps>
+
+## URL format rules
+
+Your custom slug must follow these rules:
+
+- 4 to 32 characters long
+- Lowercase letters, numbers, and hyphens only
+- No spaces or special characters
+
+ReadyRule validates the format as you type and checks availability when you leave the field.
+
+## Changing your URL
+
+You can change your custom URL, but there is a **30-day cooldown** between changes. The settings page shows when you can next update the slug. A confirmation dialog appears before overwriting an existing slug.
+
+Both the old numeric URL and the new custom URL work for parent sign-in. Updating the slug does not break existing QR codes that use your facility number.
+
+<Tip>Choose a slug that matches how parents know your facility — your business name or a common abbreviation. Keep it short so it is easy to share verbally.</Tip>
+
+## Troubleshooting
+
+<Accordion title="Slug is already taken">
+  Another facility has claimed that name. Try adding a location identifier, like `sunshine-daycare-oakland`.
+</Accordion>
+
+<Accordion title="Cannot change URL yet">
+  The 30-day cooldown is active. The settings page shows the exact date when you can make another change.
+</Accordion>

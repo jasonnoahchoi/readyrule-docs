@@ -1,0 +1,68 @@
+---
+title: "Settings guide"
+description: "Configure your facility's display name, notifications, and safety thresholds."
+---
+
+Manage your facility settings from the Settings page. Here you configure your facility name, sign-in URLs, notification preferences, and safety thresholds.
+
+<img src="/images/admin/settings-overview.png" alt="Settings page overview" />
+
+## Display name
+
+The display name is what parents see on sign-in pages, emails, and text messages. By default, ReadyRule uses the normalized name from your CCLD license record.
+
+To set a custom name, click the pencil icon next to the current name, type your preferred name (2-100 characters), and press Enter or click the checkmark. Click **Reset to default** to revert to the CCLD name.
+
+<img src="/images/admin/settings-display-name.png" alt="Display name setting" />
+
+<Tip>Use the name parents already know, such as "Sunshine Daycare" instead of the formal license holder name.</Tip>
+
+## Custom sign-in URL
+
+Create a memorable vanity URL for your facility sign-in page instead of the default numeric link. For example, `readyrule.com/go/sunshine-daycare` instead of `readyrule.com/go/123456`.
+
+<img src="/images/admin/vanity-url-settings.png" alt="Custom sign-in URL setting" />
+
+Enter a slug using 4-32 lowercase letters, numbers, and hyphens. ReadyRule checks availability as you type and shows a live preview of your URL.
+
+<Warning>Changing an existing URL breaks any printed QR codes or shared links that use the old address. You can only change your URL once every 30 days.</Warning>
+
+## Parent check-in QR code
+
+The parent check-in QR code lets parents scan with their phone camera to check children in or out. No app download is required.
+
+From this card you can:
+
+- **Copy Link** — copy the sign-in URL to your clipboard
+- **Download QR** — save the QR code as a high-resolution PNG
+- **Print for Wall** — generate a formatted poster with your facility name and scan instructions
+
+The QR code automatically uses your custom sign-in URL if you have one set.
+
+## Staff check-in QR code
+
+The staff check-in QR code works the same way but is for staff clock-in, clock-out, and break tracking. Staff must be logged into ReadyRule to use it.
+
+You can copy, download, or print the staff QR code just like the parent version. The printed poster uses a distinct indigo color scheme so staff and parent codes are easy to tell apart.
+
+<Tip>For a front-desk tablet or laptop, bookmark the kiosk URL shown below the staff QR code. Staff pick their name and enter a PIN to check in — no QR scan needed.</Tip>
+
+## Late pickup warning
+
+Set how far before closing time the dashboard starts highlighting children who are still present. Choose a threshold from the dropdown: 15 minutes, 30 minutes, 45 minutes, 1 hour, 1.5 hours, or 2 hours.
+
+The default is 30 minutes.
+
+<Accordion title="How the warning threshold works">
+  ReadyRule compares the current time against your facility's posted closing time. When the remaining time drops below your threshold, any children still checked in are highlighted on the dashboard. This gives you time to contact parents before closing.
+</Accordion>
+
+## Parent SMS reminders
+
+Toggle this setting to control whether parents receive text message reminders about late pickups. When enabled, parents get an SMS when their child is still at the facility near closing time.
+
+This setting is enabled by default. Use the switch to turn it off if you prefer to handle late-pickup communication yourself.
+
+## Help and support
+
+Click **Replay Tour** to restart the guided product walkthrough from the beginning. This navigates you back to the dashboard and launches the step-by-step tour.

@@ -1,0 +1,205 @@
+---
+title: "CSV import"
+description: "Import children and adults from a CSV file to quickly populate your roster."
+---
+
+Add multiple children or authorized adults to your roster at once by uploading a CSV file.
+
+<img src="/images/admin/child-roster-overview.png" alt="Child roster page with import options" />
+
+## Quick start
+
+<Steps>
+  <Step title="Go to Child Roster">
+    Navigate to **Child Roster** in the main navigation.
+  </Step>
+  <Step title="Click Import">
+    Click **Import Children** or **Import Adults**.
+  </Step>
+  <Step title="Download the template CSV">
+    Click **Download template** at the bottom of the upload dialog. Open the file in Excel, Google Sheets, or any spreadsheet app.
+  </Step>
+  <Step title="Fill in your data">
+    Follow the column format described below for your import type.
+  </Step>
+  <Step title="Upload and review">
+    Drag and drop your CSV file onto the upload area, or click to browse and select your file.
+  </Step>
+  <Step title="Click Import">
+    Review the preview, then click **Import**.
+  </Step>
+</Steps>
+
+## When to use CSV import
+
+| Situation | Recommendation |
+|-----------|----------------|
+| Setting up a new facility | Use **Roster Import** (children + parents in one file) |
+| Adding 5+ children at once | Use CSV import (children or roster format) |
+| Adding children with their parents linked | Use **Roster Import** |
+| Adding 1-4 children | Use the manual "Add Child" form |
+| Adding only adults (no children) | Use Adults CSV import |
+
+## CSV formats
+
+### Children CSV
+
+| Column | Required | Format | Example |
+|--------|----------|--------|---------|
+| `first_name` | Yes | Text | Emma |
+| `last_name` | Yes | Text | Johnson |
+| `date_of_birth` | Yes | YYYY-MM-DD | 2021-03-15 |
+| `age_group` | Yes | infant, toddler, preschool, or school_age | toddler |
+
+```csv
+first_name,last_name,date_of_birth,age_group
+Emma,Johnson,2021-03-15,toddler
+Max,Johnson,2019-08-22,preschool
+Sophia,Garcia,2020-06-10,toddler
+```
+
+### Adults CSV
+
+| Column | Required | Format | Example |
+|--------|----------|--------|---------|
+| `first_name` | Yes | Text | John |
+| `last_name` | Yes | Text | Johnson |
+| `phone` | Yes | Phone number | +13105551234 |
+| `relationship` | Yes | parent, guardian, grandparent, family_member, emergency_contact, authorized_adult, nanny, or other | parent |
+
+```csv
+first_name,last_name,phone,relationship
+John,Johnson,+13105551234,parent
+Jane,Johnson,+13105555678,parent
+Maria,Garcia,(310) 555-9012,grandparent
+```
+
+### Roster CSV (recommended for new facilities)
+
+The roster format combines children and parents in a single file. Each row is one child, with up to two parents or guardians attached.
+
+| Column | Required | Format | Example |
+|--------|----------|--------|---------|
+| `child_first_name` | Yes | Text | Emma |
+| `child_last_name` | Yes | Text | Smith |
+| `date_of_birth` | Yes | YYYY-MM-DD | 2022-03-15 |
+| `age_group` | Yes | infant, toddler, preschool, or school_age | toddler |
+| `parent1_first_name` | If parent1 has data | Text | Sarah |
+| `parent1_last_name` | No | Text | Smith |
+| `parent1_phone` | If parent1 has data | Phone number | (510) 555-1234 |
+| `parent1_relationship` | No (defaults to parent) | See relationships list | parent |
+| `parent1_email` | No | Email | sarah@email.com |
+| `parent2_first_name` | If parent2 has data | Text | John |
+| `parent2_last_name` | No | Text | Smith |
+| `parent2_phone` | If parent2 has data | Phone number | (510) 555-5678 |
+| `parent2_relationship` | No (defaults to parent) | See relationships list | parent |
+| `parent2_email` | No | Email | john@email.com |
+
+<Tip>Parent 2 columns can be left empty for single-parent entries. If the same parent phone appears on multiple rows, the parent is created once and linked to each child. Parents already in your facility (matched by phone) are automatically reused.</Tip>
+
+### Phone number tips
+
+The system accepts various phone formats and converts them automatically:
+
+| You enter | System stores |
+|-----------|---------------|
+| (310) 555-1234 | +13105551234 |
+| 310-555-1234 | +13105551234 |
+| 3105551234 | +13105551234 |
+| +13105551234 | +13105551234 |
+
+International numbers must include the country code (e.g., +447911123456 for UK).
+
+## Importing your data
+
+<Steps>
+  <Step title="Upload">
+    Click **Import Children** or **Import Adults**, then drag and drop your CSV file or click to browse.
+  </Step>
+  <Step title="Review">
+    The preview screen shows:
+    - **Green checkmark**: Valid rows ready to import
+    - **Red X with error count**: Rows with problems (cannot be imported)
+
+    If you see errors, hover over the error icon to see what's wrong. Fix issues in your spreadsheet and re-upload, or proceed with just the valid rows.
+  </Step>
+  <Step title="Select rows">
+    All valid rows are selected by default. Uncheck any rows you want to skip. Use the header checkbox to select or deselect all valid rows.
+  </Step>
+  <Step title="Import">
+    Click **Import X Records** to start the import.
+  </Step>
+  <Step title="Review results">
+    The results screen shows:
+    - **Imported**: New records added
+    - **Skipped**: Duplicates that already exist
+    - **Failed**: Records that could not be added (rare)
+  </Step>
+</Steps>
+
+## Handling duplicates
+
+The system automatically detects duplicates:
+
+| Type | Duplicate detection |
+|------|---------------------|
+| Children | Same first name + last name + date of birth |
+| Adults | Same phone number |
+
+Duplicates are **skipped** (not updated). You can safely re-import a CSV that contains some existing records — only new records will be added. To update existing records, edit them individually from the roster.
+
+## After import
+
+### Linking adults to children
+
+If you used the **Roster Import**, children and parents are automatically linked — no extra steps needed.
+
+If you used separate Children + Adults imports, adults are added to your facility's pool but are not linked to specific children. To link them:
+
+1. Go to the child's profile
+2. Click **Add Guardian**
+3. Select the adult from the dropdown
+
+### Verifying the import
+
+1. Check the roster list for your new records
+2. For adults, phone verification will show as "Pending"
+3. Adults can verify their phones when they first use the sign-in system
+
+## Limits
+
+| Limit | Value |
+|-------|-------|
+| Maximum records per import | 200 |
+| File format | CSV only (.csv) |
+| Encoding | UTF-8 recommended |
+
+For larger imports, split your data into multiple CSV files of 200 records each.
+
+## Troubleshooting
+
+<Accordion title="Invalid date format">
+  Dates must be in YYYY-MM-DD format:
+  - Correct: `2021-03-15`
+  - Incorrect: `3/15/2021`, `15-03-2021`, `March 15, 2021`
+</Accordion>
+
+<Accordion title="Invalid age group">
+  Use one of these exact values (lowercase): `infant`, `toddler`, `preschool`, `school_age`
+</Accordion>
+
+<Accordion title="Invalid phone format">
+  Ensure phone numbers include area code, don't contain letters, and for international numbers include + and the country code.
+</Accordion>
+
+<Accordion title="Invalid relationship">
+  Use one of these exact values (lowercase): `parent`, `guardian`, `grandparent`, `family_member`, `emergency_contact`, `authorized_adult`, `nanny`, `other`
+</Accordion>
+
+<Accordion title="All rows show errors">
+  Check that your CSV:
+  - Has the correct column headers (first_name, last_name, etc.)
+  - Uses commas as separators (not semicolons or tabs)
+  - Does not have extra blank columns
+  - Was saved as CSV (not Excel .xlsx format)
+</Accordion>

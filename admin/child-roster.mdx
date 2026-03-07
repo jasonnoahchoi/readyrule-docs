@@ -1,0 +1,65 @@
+---
+title: "Child roster"
+description: "Manage your facility's child roster, enrollments, and authorized adults."
+---
+
+The child roster page is where you manage enrolled children and their authorized guardians. You can add children individually, link guardians with pickup permissions, and import your entire roster from a CSV file.
+
+<img src="/images/admin/child-roster-overview.png" alt="Child roster management page" />
+
+## Quick start
+
+<Steps>
+  <Step title="Open the child roster">
+    Navigate to **Child Roster** in the sidebar.
+  </Step>
+  <Step title="Add a child">
+    Click **Add Child** and enter the child's name, age group, and date of birth. Add their primary contact (parent or guardian) with phone number and relationship.
+  </Step>
+  <Step title="Link additional guardians">
+    Select a child to view their profile, then add more authorized adults. Set sign-in and sign-out permissions for each guardian.
+  </Step>
+</Steps>
+
+## Adding children
+
+When you add a child, you also create their primary contact in one step. ReadyRule:
+
+1. Creates the authorized adult first (validates phone number)
+2. Creates the child record
+3. Links the adult to the child with default permissions
+
+You can add additional guardians after the child is created. Each guardian can have separate sign-in and sign-out permissions and an optional expiration date.
+
+## CSV import
+
+For bulk enrollment, use the **Import Roster** button to upload a CSV file. Three import types are supported:
+
+| Type | What it imports |
+|------|----------------|
+| **Roster** | Children with up to two parents each |
+| **Children** | Children only (no parent links) |
+| **Adults** | Authorized adults only |
+
+The import skips duplicates automatically based on matching names and contact info.
+
+## Editing and removing
+
+- **Edit a child** — click a child's name to update their details or age group
+- **Remove a child** — sets the child's enrollment status to inactive (soft delete)
+- **Edit a guardian** — update name, phone, email, or relationship
+- **Unlink a guardian** — remove a guardian's authorization for a specific child
+
+<Warning>Every child must have at least one linked guardian. You cannot unlink the last remaining guardian from a child.</Warning>
+
+<Tip>Print a sign-in QR code for parents from the Settings page. A tip banner on the roster page links directly there.</Tip>
+
+## Troubleshooting
+
+<Accordion title="CSV import shows errors">
+  Verify your CSV columns match the expected format. Phone numbers must be valid US numbers. The import reports how many records were imported and how many were skipped.
+</Accordion>
+
+<Accordion title="Guardian already registered error">
+  If a guardian's phone or email is already in the system, ReadyRule links the existing record instead of creating a duplicate. This is expected behavior.
+</Accordion>

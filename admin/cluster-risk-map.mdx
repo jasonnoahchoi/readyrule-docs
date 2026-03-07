@@ -1,0 +1,46 @@
+---
+title: "Cluster risk map"
+description: "Visualize citation clusters and risk patterns across facilities near your location."
+---
+
+The cluster risk map shows nearby childcare facilities on an interactive map, color-coded by inspection status. Use it to understand how much inspector activity is concentrated in your area and anticipate when visits may increase.
+
+<img src="/images/admin/cluster-risk-map-overview.png" alt="Cluster risk map showing nearby facilities with color-coded markers" />
+
+## Quick start
+
+<Steps>
+  <Step title="Open the cluster risk map">
+    Navigate to **Cluster Risk** from the sidebar or command center. The map loads automatically based on your facility's coordinates.
+  </Step>
+  <Step title="Review your risk level">
+    Check the risk badge in the map header. It displays **High**, **Moderate**, or **Low** based on how many nearby facilities are overdue for inspection.
+  </Step>
+  <Step title="Explore nearby facilities">
+    Click any marker on the map to see facility details, including their last visit date and inspection status.
+  </Step>
+</Steps>
+
+## How it works
+
+ReadyRule plots all licensed facilities within a 3-mile radius of your location on a Leaflet map. Each marker is color-coded:
+
+- **Purple** — your facility
+- **Red** — overdue for inspection
+- **Orange** — due soon
+- **Blue** — recently visited
+- **Green** — compliant
+
+The cluster risk level is calculated from the number of overdue facilities nearby:
+
+| Overdue count | Risk level |
+|---|---|
+| 5 or more | High |
+| 2 to 4 | Moderate |
+| 0 to 1 | Low |
+
+When multiple facilities in your area are overdue, inspectors often schedule visits in clusters to cover the region efficiently. A high cluster risk means your area is more likely to receive inspector attention soon.
+
+<Tip>If your area has fewer than 3 nearby facilities, ReadyRule shows a summary card instead of the full map. This means you are in a sparse area with naturally lower cluster risk.</Tip>
+
+<Warning>The cluster risk map requires facility coordinates from CCLD data. If your facility's coordinates are unavailable, the map will display an informational message instead.</Warning>

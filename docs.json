@@ -1,68 +1,147 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "ReadyRule",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#7C3AED",
+    "light": "#A78BFA",
+    "dark": "#5B21B6"
   },
   "favicon": "/favicon.svg",
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
+  },
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Admin",
         "groups": [
           {
             "group": "Getting started",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "admin/getting-started",
+              "admin/dashboard"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Attendance",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "admin/staff-sign-in",
+              "admin/attendance-export",
+              "admin/csv-import",
+              "admin/expected-absence-tracking",
+              "admin/attendance-backfill"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Compliance",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "admin/compliance-chat",
+              "admin/compliance-score-trend",
+              "admin/browsing-violations",
+              "admin/using-inspection-readiness",
+              "admin/inspector-mode"
             ]
           },
           {
-            "group": "AI tools",
+            "group": "Intelligence",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "admin/facility-intel",
+              "admin/citation-intelligence",
+              "admin/cluster-risk-map",
+              "admin/regional-office-intelligence"
+            ]
+          },
+          {
+            "group": "Tools",
+            "pages": [
+              "admin/poc-generator",
+              "admin/poc-evidence-submission",
+              "admin/ratio-forecasting",
+              "admin/photo-verification",
+              "admin/site-visit-rights"
+            ]
+          },
+          {
+            "group": "Management",
+            "pages": [
+              "admin/child-roster",
+              "admin/vanity-url",
+              "admin/alerts-and-actions",
+              "admin/checklist",
+              "admin/settings-guide"
+            ]
+          },
+          {
+            "group": "Reports",
+            "pages": [
+              "admin/attendance-reports",
+              "admin/compliance-certificate",
+              "admin/report-subscriptions"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "Staff",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "Getting started",
             "pages": [
-              "api-reference/introduction"
+              "staff/getting-started",
+              "staff/onboarding"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Daily tasks",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "staff/kiosk-pin-sign-in",
+              "staff/welcoming-parents",
+              "staff/attendance-history",
+              "staff/late-pickup-alerts"
+            ]
+          },
+          {
+            "group": "Compliance",
+            "pages": [
+              "staff/compliance-chat",
+              "staff/browsing-violations",
+              "staff/ratio-forecasting"
+            ]
+          },
+          {
+            "group": "Profile",
+            "pages": [
+              "staff/profile-and-certs",
+              "staff/photo-verification"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Parents & Guardians",
+        "groups": [
+          {
+            "group": "Getting started",
+            "pages": [
+              "parent/sign-in-preferences",
+              "parent/qr-code-sign-in"
+            ]
+          },
+          {
+            "group": "Daily use",
+            "pages": [
+              "parent/family-dashboard",
+              "parent/multi-child-signin",
+              "parent/notifications-and-history"
+            ]
+          },
+          {
+            "group": "Account",
+            "pages": [
+              "parent/guardian-management",
+              "parent/photo-verification"
             ]
           }
         ]
@@ -71,52 +150,27 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "ReadyRule",
+          "href": "https://readyrule.com",
+          "icon": "house"
         }
       ]
     }
-  },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
   },
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:support@readyrule.com"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Open App",
+      "href": "https://readyrule.com/app"
     }
-  },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
   },
   "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
+    "socials": {}
   }
 }
