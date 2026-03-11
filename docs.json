@@ -7,6 +7,16 @@
     "light": "#A78BFA",
     "dark": "#5B21B6"
   },
+  "fonts": {
+    "heading": {
+      "family": "Sora",
+      "weight": 600
+    },
+    "body": {
+      "family": "Manrope",
+      "weight": 400
+    }
+  },
   "favicon": "/favicon.svg",
   "logo": {
     "light": "/logo/light.svg",
