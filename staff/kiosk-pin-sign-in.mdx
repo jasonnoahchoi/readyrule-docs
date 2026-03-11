@@ -1,0 +1,51 @@
+---
+title: "Kiosk PIN sign-in"
+description: "Use the staff kiosk to clock in and out with your personal PIN."
+---
+
+The staff kiosk is a shared-device sign-in page that your facility bookmarks on a tablet or computer near the entrance. Any staff member can clock in or out by selecting their name and entering their PIN.
+
+<img src="/images/staff/kiosk-pin-sign-in-overview.png" alt="Staff kiosk PIN sign-in screen showing the staff list and PIN entry keypad" />
+
+## Quick start
+
+<Steps>
+  <Step title="Find your name">
+    On the kiosk screen, scroll through the staff list and tap your name. Each entry shows your role and current status.
+  </Step>
+  <Step title="Enter your PIN">
+    Type your personal PIN on the keypad. If your PIN is verified, you proceed to the action screen.
+  </Step>
+  <Step title="Choose an action">
+    Select the action that matches what you are doing: **Sign In**, **Start Break**, **End Break**, or **Sign Out**. A confirmation message appears with the timestamp.
+  </Step>
+</Steps>
+
+## How it works
+
+The kiosk page runs at `/staff-kiosk/{facilityId}` and does not require a logged-in session. This makes it ideal for a shared tablet at your facility entrance.
+
+After you complete an action, the kiosk shows a confirmation screen for 5 seconds, then automatically returns to the staff list for the next person.
+
+### Two sign-in options
+
+Your facility may offer two ways to check in:
+
+| Method | URL | Best for |
+|--------|-----|----------|
+| **Kiosk (PIN)** | `/staff-kiosk/{facilityId}` | Shared tablet at the facility |
+| **QR (session)** | `/staff-qr/{facilityId}` | Scanning a QR code on your personal phone |
+
+The QR option uses your logged-in session, so no PIN is needed. The kiosk option always requires a PIN since multiple people share the device.
+
+<Tip>If you do not have a PIN set up, ask your facility administrator to assign one. You cannot use the kiosk without a PIN.</Tip>
+
+## Troubleshooting
+
+<Accordion title="PIN not working">
+  Double-check that you are entering the correct PIN. If you have forgotten it, ask your administrator to reset it.
+</Accordion>
+
+<Accordion title="Name not on the list">
+  Only active staff members appear on the kiosk. If you do not see your name, confirm with your administrator that you have been added as staff.
+</Accordion>

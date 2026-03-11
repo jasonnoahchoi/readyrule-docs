@@ -1,0 +1,128 @@
+---
+title: "Staff clock in/out"
+description: "Set up QR code or kiosk-based staff attendance tracking for your facility."
+---
+
+Staff clock-in lets your team record when they arrive, leave, and take breaks. You can use QR codes, a front desk kiosk, or both.
+
+<img src="/images/admin/staff-sign-in-overview.png" alt="Staff sign-in overview showing QR and kiosk options" />
+
+## Set up the QR code
+
+<Steps>
+  <Step title="Go to Settings">
+    Navigate to **Settings** from the sidebar (gear icon at the bottom). You will see a "QR Codes" section with two QR codes — one for parents and one for staff.
+  </Step>
+  <Step title="Find the staff sign-in QR code">
+    Scroll down to the **Staff Sign-In** section. You will see a QR code and a direct link.
+  </Step>
+  <Step title="Print or share the QR code">
+    You have three options:
+
+    | Action | What it does |
+    |--------|-------------|
+    | **Copy Link** | Copies the sign-in URL to your clipboard — share via text or email |
+    | **Download QR** | Saves the QR code as an image file |
+    | **Print for Wall** | Opens a print-ready page with the QR code and instructions |
+
+    <Tip>Print the QR code and post it near your entrance at eye level. Staff can scan it from a few feet away.</Tip>
+  </Step>
+</Steps>
+
+## Set up the front desk kiosk
+
+If you have a shared tablet or laptop at your front desk, you can set up a kiosk page where staff pick their name and enter a PIN.
+
+<img src="/images/admin/staff-sign-in-kiosk.png" alt="Staff kiosk sign-in screen with name list" />
+
+<Steps>
+  <Step title="Find the kiosk URL">
+    In the Staff Sign-In QR section, look for the **Kiosk / Front Desk Setup** box. It shows a URL like:
+
+    ```text
+    https://readyrule.com/staff-kiosk/your-facility
+    ```
+  </Step>
+  <Step title="Bookmark it on your tablet">
+    Open that URL in your tablet's browser and add it to your home screen or bookmarks. You will see a list of all active staff names. No login is needed on the tablet itself.
+  </Step>
+  <Step title="Set PINs for each staff member">
+    Staff need a 4-digit PIN to use the kiosk. You set these in staff settings:
+
+    1. Go to **Staff** in the sidebar
+    2. Click on a staff member's name
+    3. Scroll down to the **Attendance PIN** section
+    4. Click **Set PIN**
+    5. Enter a 4-digit number and confirm it
+    6. Click **Save PIN**
+
+    Repeat for each staff member who will use the kiosk.
+  </Step>
+</Steps>
+
+## Managing PINs
+
+### Change a staff member's PIN
+
+1. Go to **Staff** and click the staff member
+2. In the **Attendance PIN** section, click **Change PIN**
+3. Enter the new 4-digit PIN and confirm
+4. Click **Save PIN**
+
+### Remove a PIN
+
+1. Go to **Staff** and click the staff member
+2. Click **Change PIN**, then click **Remove**
+
+The staff member will no longer be able to use the kiosk until you set a new PIN.
+
+## How staff use it
+
+### QR code (personal phone)
+
+1. Staff scans the QR code with their phone camera
+2. They log into ReadyRule if they are not already logged in
+3. They see their current status and tap **Clock In**, **Clock Out**, **Start Break**, or **Break Over**
+
+### Kiosk (shared tablet)
+
+1. Staff taps their name from the list
+2. They enter their 4-digit PIN
+3. They see their status and tap the action they need
+4. A confirmation appears, then it auto-returns to the name list for the next person
+
+## Troubleshooting
+
+<Accordion title="A staff member doesn't see their name on the kiosk">
+  They must be marked as **active** in ReadyRule. Go to **Staff** and check their status.
+</Accordion>
+
+<Accordion title="The QR code takes staff to a login page">
+  That is expected. The QR code flow requires each staff member to be logged into ReadyRule on their own phone. If they don't have an account, invite them first.
+</Accordion>
+
+<Accordion title="Can staff set their own PIN?">
+  Yes. On the QR code page (personal phone), if they are logged in and don't have a PIN yet, they will see an option to set one themselves.
+</Accordion>
+
+<Accordion title="What if someone enters the wrong PIN too many times?">
+  The system locks them out for 5 minutes after 3 wrong attempts. This prevents guessing. Wait 5 minutes and try again.
+</Accordion>
+
+<Accordion title="Can I see who clocked in today?">
+  Yes. The attendance records appear in **Attendance** > daily view. Each event shows the time, action, and method (QR code or manual).
+</Accordion>
+
+<Accordion title="A staff member's name shows up but they can't clock in">
+  They don't have a PIN set yet. Go to their staff profile and set one.
+</Accordion>
+
+## Quick reference
+
+| Task | Where to go | Time |
+|------|-------------|------|
+| Print QR code | Settings > QR Codes > Staff Sign-In > Print for Wall | 1 min |
+| Set up kiosk | Settings > QR Codes > Staff Sign-In > Kiosk URL | 2 min |
+| Set a staff PIN | Staff > [Name] > Attendance PIN > Set PIN | 1 min |
+| Change a PIN | Staff > [Name] > Attendance PIN > Change PIN | 1 min |
+| Remove a PIN | Staff > [Name] > Change PIN > Remove | 1 min |

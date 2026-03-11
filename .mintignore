@@ -5,3 +5,9 @@
 # Draft content
 drafts/
 *.draft.mdx
+
+# Internal files
+.abilities/
+internal/
+snippets/
+**/CLAUDE.md

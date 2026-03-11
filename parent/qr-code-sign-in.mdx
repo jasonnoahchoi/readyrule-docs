@@ -1,0 +1,59 @@
+---
+title: "QR code sign-in"
+description: "Sign your children in and out using the facility's QR code."
+---
+
+Your facility displays a QR code at the entrance. Scanning it with your phone opens a sign-in page where you can check your children in or out in seconds.
+
+<img src="/images/parent/qr-code-sign-in-landing.png" alt="QR code sign-in page" />
+
+## Quick start
+
+<Steps>
+  <Step title="Scan the QR code">
+    Use your phone's camera to scan the QR code posted at the facility entrance. It opens a page like `readyrule.com/go/sunshine-daycare` or `readyrule.com/go/013423682`.
+  </Step>
+  <Step title="Verify your identity">
+    **First time:** Enter your phone number and verify it with a one-time code sent via SMS.
+    **Returning:** The system recognizes you automatically. You go straight to your children.
+    <img src="/images/parent/qr-code-sign-in-landing-mobile.png" alt="QR sign-in on mobile" />
+  </Step>
+  <Step title="Sign in or out">
+    Your linked children appear with their current status. Tap to sign them in or out. A confirmation appears immediately.
+  </Step>
+</Steps>
+
+## How it works
+
+The QR code encodes your facility's unique sign-in URL. When you scan it:
+
+1. ReadyRule resolves the facility from the URL (supports both numeric IDs and custom slugs)
+2. If you are a recognized parent, your linked children load automatically
+3. You tap to sign in or sign out each child
+4. The facility sees the update in real time on their attendance log
+
+The page is optimized for mobile with large touch targets and a minimal interface. There is no app to download — it works in your phone's browser.
+
+## Install as an app
+
+After scanning, your phone may prompt you to install ReadyRule as a home screen app. This gives you:
+
+- Quick access without scanning the QR code each time
+- App-like full-screen experience
+- Push notification support (when enabled by the facility)
+
+<Tip>If you have multiple children at the facility, they all appear on the same sign-in screen. You can sign them all in or out in one visit.</Tip>
+
+## Troubleshooting
+
+<Accordion title="Facility not found after scanning">
+  The QR code may be outdated or damaged. Ask the facility staff to verify the QR code is current. Try scanning again in good lighting.
+</Accordion>
+
+<Accordion title="Phone number not recognized">
+  Your phone number must match what the facility has on file. Contact the facility to update your authorized adult record with the correct phone number.
+</Accordion>
+
+<Accordion title="OTP code not arriving">
+  Check your SMS inbox and spam filters. The code is sent immediately. If it does not arrive within 60 seconds, request a new code.
+</Accordion>

@@ -1,0 +1,90 @@
+---
+title: "Welcoming parents"
+description: "Send welcome messages to parents so they know how to use QR sign-in at your facility."
+---
+
+When you add children to your facility roster, their authorized adults need to know that your facility now uses digital sign-in. ReadyRule lets you send welcome emails and text messages to all parents at once, explaining how QR sign-in works.
+
+## Quick start: send welcome messages
+
+<Steps>
+  <Step title="Go to your Child Roster">
+    Navigate to **Attendance > Child Roster** from the sidebar. You will see an amber banner at the top if any parents haven't been welcomed yet:
+
+    > **5 parents haven't been welcomed yet** — [Preview Message] [Send Welcome to All]
+  </Step>
+  <Step title="Preview the message (optional)">
+    Tap **Preview Message** to see exactly what parents will receive. A modal shows two tabs:
+    - **Email** tab — The full email with QR instructions and your facility name
+    - **SMS** tab — The text message (for parents without email)
+
+    The preview also shows recipient counts: how many parents will get email vs. SMS.
+  </Step>
+  <Step title="Send welcome to all">
+    Tap **Send Welcome to All**. You will see a loading spinner while messages are sent, then a confirmation: "Welcome sent to 5 parents."
+
+    - Parents **with an email address** receive the welcome email
+    - Parents **with only a phone number** receive an SMS instead
+    - Parents **with neither** are skipped (add contact info in the roster first)
+  </Step>
+</Steps>
+
+## Checking welcome status
+
+After sending, each parent's welcome status appears as a badge next to their name in the roster.
+
+| Badge | Meaning |
+|-------|---------|
+| **Not sent** (gray) | Welcome hasn't been sent yet |
+| **Sent (email)** (green) | Email delivered, with relative time (e.g., "3d ago") |
+| **Sent (SMS)** (green) | Text message delivered |
+| **Sent (both)** (green) | Both email and SMS sent |
+
+Hover over any green badge to see the exact date and time.
+
+## What parents receive
+
+### Email
+
+Parents get a branded email from ReadyRule with your facility's name, "How it works" steps (scan QR, enter code, tap to sign in), a note that no app download is needed, and your facility's contact info.
+
+Subject line examples:
+- "Sunshine Daycare has set up digital sign-in for Emma"
+- "Sunshine Daycare has set up digital sign-in for Emma and family" (multiple children)
+
+### Text message
+
+Parents without email get a short SMS:
+
+> "[Facility Name] now uses ReadyRule for sign-in/out. Just scan the QR code at drop-off — no app needed. Reply STOP to opt out."
+
+## Troubleshooting
+
+<Accordion title="The banner says 0 parents to welcome but I just added a child">
+  The count refreshes every 60 seconds. Wait a moment or refresh the page.
+</Accordion>
+
+<Accordion title="A parent says they didn't get the welcome email">
+  Check their email address in the roster for typos. Next to each parent's name, you will see resend buttons — an SMS icon to resend the text message and an email icon to resend the email. Each button is rate-limited to 3 sends per parent per 24 hours.
+</Accordion>
+
+<Accordion title="I updated a parent's phone number or email — do I need to resend?">
+  Yes. When you change a parent's phone or email, their welcome status automatically resets to "Not sent" for that channel. Use the resend button to send to their updated contact.
+</Accordion>
+
+<Accordion title="Can I customize the welcome message?">
+  Not yet. The message is standardized to ensure parents get clear, consistent instructions. Your facility name and child's name are automatically included.
+</Accordion>
+
+<Accordion title="Some messages show as skipped">
+  Those parents don't have email or phone on file. Edit their contact info in the child roster, then resend.
+</Accordion>
+
+## Quick reference
+
+| Task | Where to go | Time |
+|------|-------------|------|
+| Send welcome to all parents | Attendance > Child Roster > Banner | 30 sec |
+| Preview welcome message | Banner > "Preview Message" | 15 sec |
+| Check who's been welcomed | Child Roster > Look for badges | 10 sec |
+| Add missing contact info | Child Roster > Edit adult > Add email/phone | 1 min |
