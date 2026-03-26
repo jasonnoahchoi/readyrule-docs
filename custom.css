@@ -66,7 +66,7 @@ h4 {
 /* Stack cards on small screens */
 @media (max-width: 640px) {
   /* CardGroup grid override — single column on mobile */
-  [class*="grid"] {
+  #content-area [class*="grid"] {
     grid-template-columns: 1fr !important;
   }
 
