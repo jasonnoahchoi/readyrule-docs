@@ -60,3 +60,38 @@ h4 {
 .nav-tabs-item {
   font-size: 1.05rem !important;
 }
+
+/* ── Mobile responsiveness ─────────────────────── */
+
+/* Stack cards on small screens */
+@media (max-width: 640px) {
+  /* CardGroup grid override — single column on mobile */
+  [class*="grid"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Tone down heading sizes for mobile */
+  h1 {
+    font-size: 2rem !important;
+  }
+
+  h2 {
+    font-size: 1.5rem !important;
+  }
+
+  h3 {
+    font-size: 1.25rem !important;
+  }
+
+  /* Slightly smaller body text on mobile */
+  body {
+    font-size: 16px !important;
+  }
+
+  p,
+  li,
+  #content-area,
+  article {
+    font-size: 1.05rem !important;
+  }
+}
