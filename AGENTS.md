@@ -31,3 +31,9 @@
 
 {/* Define what should and shouldn't be documented */}
 {/* Example: Don't document internal admin features */}
+
+## Strategic context
+
+Strategic vault references synced from `~/c3po/wiki/`. These files are read-only here; edit them in the vault, then rerun `bash ~/c3po/.train-of-thought/scripts/sync-wiki-refs.sh`.
+
+@.abilities/wiki/readyrule-state-coverage-matrix.md
