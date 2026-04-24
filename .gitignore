@@ -1,2 +1,3 @@
-# Synced from c3po/wiki via ~/c3po/.train-of-thought/scripts/sync-wiki-refs.sh
-.abilities/wiki/
+# Session artifacts from the abilities plugin (ralph state, tasks, logs)
+# and synced vault wiki copies. Both are local-only / regenerable.
+.abilities/
