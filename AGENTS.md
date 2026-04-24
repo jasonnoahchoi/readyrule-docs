@@ -37,6 +37,10 @@
 Strategic vault references synced from `~/c3po/wiki/`. These files are read-only here; edit them in the vault, then rerun `bash ~/c3po/.train-of-thought/scripts/sync-wiki-refs.sh`.
 
 @.abilities/wiki/readyrule-state-coverage-matrix.md
+## Wikilink convention
 
+Files synced from the c3po vault preserve raw Obsidian wikilinks (`[[x]]`, `[[x|display]]`, `[[x#heading]]`, `[[#heading]]`, `[[path/to/y]]`). They are NOT converted to markdown links during sync.
 
-**Wikilink convention in `.abilities/wiki/` files.** These files are synced from the c3po vault via `$HOME/Library/Mobile Documents/iCloud~md~obsidian/Documents/c3po/.train-of-thought/scripts/sync-wiki-refs.sh`. Obsidian wikilinks `[[foo]]` are rewritten to `[foo]($HOME/c3po/wiki/foo.md)` at sync time, so `Read` tools can follow them through the `~/c3po -> <vault>` symlink. If you see a raw `[[foo]]` that survived conversion, the target is `$HOME/c3po/wiki/foo.md`.
+**Resolution (this deployment, local Mac):** `[[x]]` resolves to `$HOME/c3po/wiki/x.md`. Path-qualified wikilinks like `[[me/startups/foo]]` resolve to `$HOME/c3po/me/startups/foo.md` (path is from vault root, not `wiki/`). In-page anchors (`[[#heading]]`) stay within the current file. To dig deeper into a wikilink, use the Read tool against the resolved path.
+
+When this skill / project is deployed to a different environment (VPS with the vault rsynced to `/srv/c3po`, MCP-served vault, HTTP-published vault, etc.), update this paragraph with the environment-appropriate resolution rule. The wikilink syntax stays the same; only the resolution changes.
