@@ -1,0 +1,152 @@
+{
+  "entries": [
+    {
+      "title": "internal/web/plans/2026-03-06-documentation-audit/01-screenshot-capture.md",
+      "summary": null,
+      "plan_path": "internal/web/plans/2026-03-06-documentation-audit",
+      "pr_number": 1,
+      "pr_url": "https://github.com/jasonnoahchoi/readyrule-docs/pull/1",
+      "branch": "chore/prod-fix",
+      "project": "readyrule-docs",
+      "root_path": "/Users/bb16/code/readyrule/readyrule-docs",
+      "worktree": null,
+      "started": null,
+      "completed": "2026-03-15T13:06:19.556064",
+      "duration_minutes": 6380.8,
+      "iterations": 5,
+      "compactions": 0,
+      "cost_usd": 11.69,
+      "tokens_total": 3225597,
+      "cache_read_tokens": 2858389,
+      "model": "claude-opus-4-6",
+      "sessions": [
+        "2325b049-b0a5-4bb3-9ff9-32569824fcea"
+      ],
+      "phases_completed": [
+        "do",
+        "review",
+        "validate",
+        "ship",
+        "external",
+        "docs"
+      ],
+      "phases_skipped": [
+        "think",
+        "plan"
+      ],
+      "points": null,
+      "notes": null
+    },
+    {
+      "type": "execution",
+      "title": "internal/web/plans/2026-03-06-documentation-audit/01-screenshot-capture.md",
+      "summary": null,
+      "plan_path": "internal/web/plans/2026-03-06-documentation-audit",
+      "pr_number": 1,
+      "pr_url": "https://github.com/jasonnoahchoi/readyrule-docs/pull/1",
+      "branch": "main",
+      "project": "readyrule-docs",
+      "root_path": "/Users/bb16/code/readyrule/readyrule-docs",
+      "worktree": null,
+      "started": null,
+      "completed": "2026-03-20T14:48:34.574856",
+      "duration_minutes": null,
+      "iterations": 5,
+      "compactions": 0,
+      "cost_usd": 0.0,
+      "tokens_total": 0,
+      "cache_read_tokens": 0,
+      "model": "unknown",
+      "sessions": [
+        "6cb78184-a6ea-4c19-9e7e-cc9b3fcd7d70"
+      ],
+      "phases_completed": [
+        "do",
+        "review",
+        "validate",
+        "ship",
+        "external",
+        "docs"
+      ],
+      "phases_skipped": [
+        "think",
+        "plan"
+      ],
+      "points": null,
+      "notes": null
+    },
+    {
+      "type": "execution",
+      "title": "internal/web/plans/2026-03-06-documentation-audit/01-screenshot-capture.md",
+      "summary": null,
+      "plan_path": "internal/web/plans/2026-03-06-documentation-audit",
+      "pr_number": 1,
+      "pr_url": "https://github.com/jasonnoahchoi/readyrule-docs/pull/1",
+      "branch": "main",
+      "project": "readyrule-docs",
+      "root_path": "/Users/bb16/code/readyrule/readyrule-docs",
+      "worktree": null,
+      "started": null,
+      "completed": "2026-03-23T14:42:57.094052",
+      "duration_minutes": null,
+      "iterations": 5,
+      "compactions": 0,
+      "cost_usd": 0.0,
+      "tokens_total": 0,
+      "cache_read_tokens": 0,
+      "model": "unknown",
+      "sessions": [
+        "fb55547e-e335-425c-b8f2-22bb3f7ac741"
+      ],
+      "phases_completed": [
+        "do",
+        "review",
+        "validate",
+        "ship",
+        "external",
+        "docs"
+      ],
+      "phases_skipped": [
+        "think",
+        "plan"
+      ],
+      "points": null,
+      "notes": null
+    },
+    {
+      "type": "execution",
+      "status": "done",
+      "title": "internal/web/plans/2026-03-06-documentation-audit/01-screenshot-capture.md",
+      "summary": null,
+      "plan_path": "internal/web/plans/2026-03-06-documentation-audit",
+      "pr_number": 1,
+      "pr_url": "https://github.com/jasonnoahchoi/readyrule-docs/pull/1",
+      "branch": "chore/mobile-fix",
+      "project": "readyrule-docs",
+      "root_path": "/Users/bb16/code/readyrule/readyrule-docs",
+      "worktree": null,
+      "started": null,
+      "completed": "2026-03-26T10:00:51.109857",
+      "duration_minutes": 2.3,
+      "iterations": 5,
+      "compactions": 0,
+      "cost_usd": 2.19,
+      "tokens_total": 623921,
+      "cache_read_tokens": 557442,
+      "model": "claude-opus-4-6",
+      "sessions": [
+        "51327c05-5667-4de1-b5ef-52c93ff32b68"
+      ],
+      "phases_completed": [
+        "external",
+        "docs"
+      ],
+      "phases_skipped": [
+        "think",
+        "plan"
+      ],
+      "points": null,
+      "notes": null
+    }
+  ]
+}

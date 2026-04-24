@@ -1,0 +1,77 @@
+{
+  "cookies": [
+    {
+      "name": "_ga",
+      "value": "GA1.1.917204321.1772922108",
+      "domain": ".readyrule.com",
+      "path": "/",
+      "expires": 1807482781.612464,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__Secure-better-auth.session_token",
+      "value": "a0bDof1ikNSwwWwg6Cz1nrW8FbNQHTWy.Zrt9GHmvICP35vPE0GdB3aiUYwroZzzalTipJAST1Gs%3D",
+      "domain": "readyrule.com",
+      "path": "/",
+      "expires": 1773527581.030516,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__Secure-better-auth.session_data",
+      "value": "eyJzZXNzaW9uIjp7InNlc3Npb24iOnsiZXhwaXJlc0F0IjoiMjAyNi0wMy0xNFQyMjozMzowMC45MTlaIiwidG9rZW4iOiJhMGJEb2YxaWtOU3d3V3dnNkN6MW5yVzhGYk5RSFRXeSIsImNyZWF0ZWRBdCI6IjIwMjYtMDMtMDdUMjI6MzM6MDAuOTE5WiIsInVwZGF0ZWRBdCI6IjIwMjYtMDMtMDdUMjI6MzM6MDAuOTE5WiIsImlwQWRkcmVzcyI6IjEzNi4yNS44Mi4xNzYiLCJ1c2VyQWdlbnQiOiJNb3ppbGxhLzUuMCAoTWFjaW50b3NoOyBJbnRlbCBNYWMgT1MgWCAxMF8xNV83KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBIZWFkbGVzc0Nocm9tZS8xNDUuMC43NjMyLjYgU2FmYXJpLzUzNy4zNiIsInVzZXJJZCI6IjI0YzFkNjBkLWM5MTAtNDRkYy05OTNhLWRiMGVkNGQ0NTNkMyIsImlkIjoiZTcyMDllZTgtYTA5YS00YzQyLWFhZTgtZWZmNzJmYmY4ZGQ5In0sInVzZXIiOnsibmFtZSI6IkhlYXRoZXIgTGF3cmVuY2UiLCJlbWFpbCI6Imphc29ubm9haGNob2lAZ21haWwuY29tIiwiZW1haWxWZXJpZmllZCI6dHJ1ZSwiaW1hZ2UiOm51bGwsImNyZWF0ZWRBdCI6IjIwMjYtMDItMjRUMjA6MTE6NDYuNTg4WiIsInVwZGF0ZWRBdCI6IjIwMjYtMDItMjRUMjA6MTE6NDYuNTg4WiIsImZpcnN0TmFtZSI6IkhlYXRoZXIiLCJsYXN0TmFtZSI6Ikxhd3JlbmNlIiwiaWQiOiIyNGMxZDYwZC1jOTEwLTQ0ZGMtOTkzYS1kYjBlZDRkNDUzZDMifSwidXBkYXRlZEF0IjoxNzcyOTIyNzgxMDAwLCJ2ZXJzaW9uIjoiMSJ9LCJleHBpcmVzQXQiOjE3NzI5MjMwODEwMDAsInNpZ25hdHVyZSI6IlQzXzlQZGdmZC14Tm9xVVpJdUp6cHBWVlB4RTd6VjlsaW1EZ1VxQUVtRncifQ",
+      "domain": "readyrule.com",
+      "path": "/",
+      "expires": 1772923081.030647,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga_X03M4R7NJW",
+      "value": "GS2.1.s1772922107$o1$g1$t1772922781$j60$l0$h0",
+      "domain": ".readyrule.com",
+      "path": "/",
+      "expires": 1807482781.612275,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "ph_phc_or4gIWnkttmB0eRiR9VuvC85PZt7Dim5zz8yCixV1vy_posthog",
+      "value": "%7B%22%24device_id%22%3A%22019cca64-76c9-78e5-94f6-7f84838c0a5f%22%2C%22distinct_id%22%3A%2224c1d60d-c910-44dc-993a-db0ed4d453d3%22%2C%22%24sesid%22%3A%5B1772922781775%2C%22019cca64-77c3-73a1-9c52-bb083156b5a3%22%2C1772922107843%5D%2C%22%24epp%22%3Atrue%7D",
+      "domain": ".readyrule.com",
+      "path": "/",
+      "expires": 1804458783,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://readyrule.com",
+      "localStorage": [
+        {
+          "name": "ph_phc_or4gIWnkttmB0eRiR9VuvC85PZt7Dim5zz8yCixV1vy_posthog",
+          "value": "{\"$device_id\":\"019cca64-76c9-78e5-94f6-7f84838c0a5f\",\"distinct_id\":\"24c1d60d-c910-44dc-993a-db0ed4d453d3\",\"$sesid\":[1772922781775,\"019cca64-77c3-73a1-9c52-bb083156b5a3\",1772922107843],\"$initialization_time\":\"2026-03-07T22:33:01.621Z\",\"$configured_session_timeout_ms\":1800000,\"$user_state\":\"identified\",\"$autocapture_disabled_server_side\":false,\"$heatmaps_enabled_server_side\":true,\"$product_tours_enabled_server_side\":false,\"$web_vitals_enabled_server_side\":true,\"$web_vitals_allowed_metrics\":null,\"$exception_capture_enabled_server_side\":true,\"$error_tracking_suppression_rules\":[],\"$dead_clicks_enabled_server_side\":false,\"$active_feature_flags\":[\"founding-team-launch\"],\"$enabled_feature_flags\":{\"founding-team-launch\":true},\"$feature_flag_payloads\":{\"founding-team-launch\":\"{\\\"founding-team-launch-override\\\": \\\"true\\\"}\"},\"$feature_flag_details\":{\"founding-team-launch\":{\"key\":\"founding-team-launch\",\"enabled\":true,\"variant\":null,\"reason\":{\"code\":\"condition_match\",\"condition_index\":0,\"description\":\"Matched condition set 1\"},\"metadata\":{\"id\":417960,\"version\":8,\"description\":null,\"payload\":\"{\\\"founding-team-launch-override\\\": \\\"true\\\"}\"}}},\"$feature_flag_request_id\":\"a3df9e03-a86f-4deb-9b5c-def7b164c5dd\",\"$feature_flag_evaluated_at\":1772922783399,\"$client_session_props\":{\"sessionId\":\"019cca64-77c3-73a1-9c52-bb083156b5a3\",\"props\":{\"r\":\"$direct\",\"u\":\"https://readyrule.com/app\"}},\"$epp\":true,\"$user_id\":\"24c1d60d-c910-44dc-993a-db0ed4d453d3\",\"$stored_person_properties\":{\"email\":\"jasonnoahchoi@gmail.com\",\"user_role\":\"owner\",\"facility_number\":\"013423682\",\"facility_name\":\"WEN, CHUNRU\",\"is_staff\":false}}"
+        },
+        {
+          "name": "sidebar-expanded",
+          "value": "true"
+        },
+        {
+          "name": "chat-widget-open",
+          "value": "false"
+        },
+        {
+          "name": "readyrule:tour-completed",
+          "value": "true"
+        }
+      ]
+    }
+  ]
+}

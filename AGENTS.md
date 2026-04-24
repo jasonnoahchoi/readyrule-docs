@@ -37,3 +37,6 @@
 Strategic vault references synced from `~/c3po/wiki/`. These files are read-only here; edit them in the vault, then rerun `bash ~/c3po/.train-of-thought/scripts/sync-wiki-refs.sh`.
 
 @.abilities/wiki/readyrule-state-coverage-matrix.md
+
+
+**Wikilink convention in `.abilities/wiki/` files.** These files are synced from the c3po vault via `$HOME/Library/Mobile Documents/iCloud~md~obsidian/Documents/c3po/.train-of-thought/scripts/sync-wiki-refs.sh`. Obsidian wikilinks `[[foo]]` are rewritten to `[foo]($HOME/c3po/wiki/foo.md)` at sync time, so `Read` tools can follow them through the `~/c3po -> <vault>` symlink. If you see a raw `[[foo]]` that survived conversion, the target is `$HOME/c3po/wiki/foo.md`.
